@@ -15,11 +15,11 @@
 
 .primary {
   background-color: var(--color-accent);
-  color: #fff;
+  color: var(--color-text-on-accent);
 }
 
 .primary:hover {
-  background-color: #1d4ed8;
+  background-color: var(--color-accent-hover);
 }
 
 .secondary {

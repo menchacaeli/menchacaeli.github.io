@@ -6,6 +6,8 @@
   --color-muted: #666666;
   --color-accent: #2563eb;
   --color-accent-glow: #2563eb33;
+  --color-text-on-accent: #ffffff;
+  --color-accent-hover: #1d4ed8;
 
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
