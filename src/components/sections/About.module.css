@@ -18,6 +18,14 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
   margin-bottom: 3rem;
 }
 

@@ -18,6 +18,7 @@ export function About() {
         variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
       >
         <motion.p className={styles.overline} variants={fadeUp}>About</motion.p>
+        <motion.h2 className={styles.heading} variants={fadeUp}>Frontend Engineer</motion.h2>
         <div className={styles.grid}>
           <motion.div className={styles.bio} variants={fadeUp}>
             <p>

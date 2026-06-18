@@ -11,12 +11,14 @@ export default function App() {
   return (
     <div className={styles.app}>
       <Nav />
-      <Hero />
-      <Work />
-      <About />
-      <Skills />
-      <Certifications />
-      <Contact />
+      <main>
+        <Hero />
+        <Work />
+        <About />
+        <Skills />
+        <Certifications />
+        <Contact />
+      </main>
     </div>
   );
 }

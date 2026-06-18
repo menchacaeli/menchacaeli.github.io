@@ -8,19 +8,20 @@ interface ButtonProps {
 
 export function Button({ variant = 'primary', href, children }: ButtonProps) {
   if (href) {
+    const isExternal = href.startsWith('http');
     return (
       <a
         href={href}
         className={`${styles.button} ${styles[variant]}`}
-        target="_blank"
-        rel="noopener noreferrer"
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noopener noreferrer' : undefined}
       >
         {children}
       </a>
     );
   }
   return (
-    <button className={`${styles.button} ${styles[variant]}`}>
+    <button type="button" className={`${styles.button} ${styles[variant]}`}>
       {children}
     </button>
   );
