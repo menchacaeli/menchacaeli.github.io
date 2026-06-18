@@ -1,19 +1,6 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import App from '../App';
-
-vi.mock('@react-three/fiber', () => ({
-  Canvas: ({ children }: { children: React.ReactNode }) =>
-    <div data-testid="r3f-canvas">{children}</div>,
-  useFrame: vi.fn(),
-}));
-
-vi.mock('@react-three/drei', () => ({
-  Text3D: ({ children }: { children: React.ReactNode }) =>
-    <mesh>{children}</mesh>,
-  Center: ({ children }: { children: React.ReactNode }) =>
-    <group>{children}</group>,
-}));
 
 describe('App', () => {
   it('renders the Nav', () => {

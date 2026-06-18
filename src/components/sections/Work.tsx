@@ -3,12 +3,8 @@ import { useInView } from '../../hooks/useInView';
 import { Card } from '../ui/Card';
 import { Tag } from '../ui/Tag';
 import { projects } from '../../data/projects';
+import { fadeUp } from '../../lib/animations';
 import styles from './Work.module.css';
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as const } },
-} as const;
 
 export function Work() {
   const { ref, inView } = useInView<HTMLElement>(0.1);

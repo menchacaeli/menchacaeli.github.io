@@ -2,12 +2,8 @@ import { motion } from 'framer-motion';
 import { useInView } from '../../hooks/useInView';
 import { Tag } from '../ui/Tag';
 import { skills } from '../../data/skills';
+import { fadeUp } from '../../lib/animations';
 import styles from './Skills.module.css';
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as const } },
-} as const;
 
 export function Skills() {
   const { ref, inView } = useInView<HTMLElement>(0.2);
