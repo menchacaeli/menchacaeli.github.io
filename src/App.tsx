@@ -1,5 +1,3 @@
-function App() {
-  return <div id="app" />
+export default function App() {
+  return <div style={{ padding: '2rem', fontFamily: 'var(--font-heading)' }}>Portfolio</div>;
 }
-
-export default App

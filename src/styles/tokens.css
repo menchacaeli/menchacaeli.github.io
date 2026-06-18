@@ -1,0 +1,21 @@
+:root {
+  --color-bg: #0a0a0a;
+  --color-surface: #111111;
+  --color-border: #1e1e1e;
+  --color-text: #f0f0f0;
+  --color-muted: #666666;
+  --color-accent: #2563eb;
+  --color-accent-glow: #2563eb33;
+
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+}
